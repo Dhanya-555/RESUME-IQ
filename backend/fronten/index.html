@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerIQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🚀 CareerIQ</h1>
+
+<h3>AI Career Companion & ATS Analyzer</h3>
+
+<input type="text" id="role"
+placeholder="Enter Role">
+
+<button onclick="careerRoadmap()">
+Generate Roadmap
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+<div class="card">
+    <h2>ATS Score</h2>
+    <h1 id="atsScore">--</h1>
+</div>
+
+<div class="card">
+    <h2>Missing Skills</h2>
+    <p id="missingSkills"></p>
+</div>
+
+<div class="card">
+    <h2>Expected Salary</h2>
+    <p id="salary"></p>
+</div>
+<input type="file" id="resumeFile">
+<button>Upload Resume</button>
+<button>Analyze My Career</button>
+<h2>Career Chatbot</h2>
+
+<input type="text" id="question"
+placeholder="Ask a career question">
+
+<button onclick="askBot()">
+Ask AI
+</button>
+
+<p id="chatAnswer"></p>
+<script src="script.js"></script>
+
+<form id="resumeForm">
+    <input id="name" placeholder="Your Name" required>
+
+    <input id="email" type="email" placeholder="Email" required>
+
+    <textarea id="skills" placeholder="Your Skills" required></textarea>
+
+    <button type="submit">Submit Resume</button>
+</form>
+
+<script src="script.js"></script>
